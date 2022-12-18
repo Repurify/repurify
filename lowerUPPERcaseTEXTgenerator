@@ -1,0 +1,13 @@
+function crazyCaps(originalString) {
+  let crazyString = "";
+  for (let i = 0; i < originalString.length; i++) {
+    if (i % 2 === 0) {
+      crazyString += originalString[i].toLowerCase();
+    } else {
+      crazyString += originalString[i].toUpperCase();
+    }
+  }
+  return crazyString;
+}
+
+console.log(crazyCaps("Hello, how are you?"));
